@@ -9,5 +9,6 @@ else
     cp -r ./* $1
     rm $1/README.md
     rm $1/copy.sh
+    touch $1/.env
     echo "[copy.sh] Finished copying";
 fi
