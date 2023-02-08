@@ -10,5 +10,6 @@
 1. `git clone <this-repo-url>` (outside of your React App)
 2. `./copy.sh <react-app-path>`
 3. cd `<react-path>`
-4. Dockerize (Ensure you are mapping ports via `3000:80`)
+4. Dockerize (inside of react-app-path `docker build . -t 'react-app-image'`)
+5. Create a container (`docker run -d --name "docker-image"-p 3000:80 `)
 
